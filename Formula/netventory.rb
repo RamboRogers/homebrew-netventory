@@ -1,5 +1,5 @@
 class Netventory < Formula
-    desc "Netventory CLI tool"
+    desc "Netventory CLI GUI TUI tool for network inventory management"
     homepage "https://github.com/RamboRogers/netventory"
     version "0.1.0"
 
@@ -17,6 +17,6 @@ class Netventory < Formula
     end
 
     test do
-      system "#{bin}/netventory", "--help"
+      system bin/"netventory", "--help"
     end
   end
