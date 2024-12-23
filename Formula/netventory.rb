@@ -20,4 +20,3 @@ class Netventory < Formula
     system bin/"netventory", "--help"
   end
 end
-
