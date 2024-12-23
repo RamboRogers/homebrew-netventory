@@ -16,4 +16,7 @@ class Netventory < Formula
     bin.install "netventory-darwin-arm64" => "netventory" if Hardware::CPU.arm?
   end
 
+  test do
+    system bin/"netventory", "--help"
+  end
 end
