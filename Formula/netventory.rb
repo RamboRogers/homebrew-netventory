@@ -1,5 +1,5 @@
 class Netventory < Formula
-    desc "Netventory CLI GUI TUI tool for network inventory management"
+    desc "Network inventory management tool with CLI, GUI and TUI interfaces"
     homepage "https://github.com/RamboRogers/netventory"
     version "0.1.0"
 
