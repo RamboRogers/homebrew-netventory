@@ -5,10 +5,10 @@ class Netventory < Formula
 
   if Hardware::CPU.intel?
     url "https://github.com/RamboRogers/netventory/releases/download/v0.2.0n/netventory-darwin-amd64"
-    sha256 "b0ae0873f6238c49a214e19df60371dfed24442cb868008a65c2507a7ba0788d"
+    sha256 "64eece9396df788dcc6d9fea445be613c0eade493215132d8722350631436104"
   else
     url "https://github.com/RamboRogers/netventory/releases/download/v0.2.0n/netventory-darwin-arm64"
-    sha256 "6056e45bfc69fac98618b9141ef859b14e3ff01e24400ada38088975e9e24ed6"
+    sha256 "3e6f0615e10b536339729874df68a136393b0b0e5a077efebe3febfdd6cb5ff8"
   end
 
   def install
