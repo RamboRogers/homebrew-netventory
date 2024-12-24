@@ -1,7 +1,7 @@
 class Netventory < Formula
   desc "Network inventory management tool with CLI, GUI and TUI interfaces"
   homepage "https://github.com/RamboRogers/netventory"
-  version "0.1.0"
+  version "0.2.0n"
 
   if Hardware::CPU.intel?
     url "https://github.com/RamboRogers/netventory/releases/download/0.1.0/netventory-darwin-amd64"
