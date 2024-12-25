@@ -1,22 +1,27 @@
 class Netventory < Formula
-  desc "Network inventory management tool with CLI, GUI and TUI interfaces"
-  homepage "https://github.com/RamboRogers/netventory"
-  version "0.2.0n"
+  desc "Network inventory and discovery tool"
+  homepage "https://github.com/ramborogers/netventory"
+  version "0.3.0n"
 
-  if Hardware::CPU.intel?
-    url "https://github.com/RamboRogers/netventory/releases/download/v0.2.0n/netventory-darwin-amd64"
-    sha256 "64eece9396df788dcc6d9fea445be613c0eade493215132d8722350631436104"
-  else
-    url "https://github.com/RamboRogers/netventory/releases/download/v0.2.0n/netventory-darwin-arm64"
-    sha256 "3e6f0615e10b536339729874df68a136393b0b0e5a077efebe3febfdd6cb5ff8"
+  on_macos do
+    if Hardware::CPU.intel?
+      url "https://github.com/ramborogers/netventory/releases/download/0.3.0n/netventory-darwin-amd64"
+      sha256 "fea855f421a632353e6e7e3e4ea304044bea49613b74d45f2621080f046c056b" # amd64
+    else
+      url "https://github.com/ramborogers/netventory/releases/download/0.3.0n/netventory-darwin-arm64"
+      sha256 "1046a11b9a7420120ce1ca9b0060f10b25028a8b3d3178bd6ebbf6842d34d825" # arm64
+    end
   end
 
   def install
-    bin.install "netventory-darwin-amd64" => "netventory" if Hardware::CPU.intel?
-    bin.install "netventory-darwin-arm64" => "netventory" if Hardware::CPU.arm?
+    if Hardware::CPU.intel?
+      bin.install "netventory-darwin-amd64" => "netventory"
+    else
+      bin.install "netventory-darwin-arm64" => "netventory"
+    end
   end
 
   test do
-    system bin/"netventory", "--help"
+    system "#{bin}/netventory", "--version"
   end
 end
