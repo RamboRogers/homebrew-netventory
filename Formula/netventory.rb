@@ -1,15 +1,15 @@
 class Netventory < Formula
   desc "Network inventory and discovery tool"
   homepage "https://github.com/ramborogers/netventory"
-  version "0.3.0n"
+  version "0.4.0n"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ramborogers/netventory/releases/download/0.3.0n/netventory-darwin-amd64"
-      sha256 "fea855f421a632353e6e7e3e4ea304044bea49613b74d45f2621080f046c056b" # amd64
+      url "https://github.com/ramborogers/netventory/releases/download/0.4.0n/netventory-darwin-amd64"
+      sha256 "435556a4fce045ff015f758e6930631fa09e729272e0e27dbec2d9e62870da4f" # amd64
     else
-      url "https://github.com/ramborogers/netventory/releases/download/0.3.0n/netventory-darwin-arm64"
-      sha256 "1046a11b9a7420120ce1ca9b0060f10b25028a8b3d3178bd6ebbf6842d34d825" # arm64
+      url "https://github.com/ramborogers/netventory/releases/download/0.4.0n/netventory-darwin-arm64"
+      sha256 "83609e9a4a9fc37b10bb74c9ec19712edc1460f20a511919feece3f85fc0832d" # arm64
     end
   end
 
