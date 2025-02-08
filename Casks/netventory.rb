@@ -9,6 +9,14 @@ cask "netventory" do
 
   app "Netventory.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                  args: ["-d", "com.apple.quarantine", "#{appdir}/Netventory.app"],
+                  sudo: false
+  rescue
+    nil
+  end
+
   zap trash: [
     "~/Library/Application Support/Netventory",
     "~/Library/Preferences/com.netventory.app.plist",
