@@ -6,10 +6,10 @@ class Netventory < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ramborogers/netventory/releases/download/0.4.0n/netventory-darwin-amd64"
-      sha256 "435556a4fce045ff015f758e6930631fa09e729272e0e27dbec2d9e62870da4f" # amd64
+      sha256 "8be634f82140276a6d398ff1b8e64d754bf0cc051c28b1ed6f62140684f876cf" # amd64
     else
       url "https://github.com/ramborogers/netventory/releases/download/0.4.0n/netventory-darwin-arm64"
-      sha256 "83609e9a4a9fc37b10bb74c9ec19712edc1460f20a511919feece3f85fc0832d" # arm64
+      sha256 "4c35a3dd678fa4946c784e81477df5ebfae6aeae8c693c2353734f2618d4dde1" # arm64
     end
   end
 
