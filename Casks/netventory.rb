@@ -1,6 +1,6 @@
 cask "netventory" do
   version "0.4.0n"
-  sha256 "155ff340632a44402a2fed0d1ab9a97372baaa20eeab23e94bcc2458b45dfddf"
+  sha256 "ec1c59d457756eae9382cab0d149004bf8091496f6293833a32d4694b8d0d9ee"
 
   url "https://github.com/ramborogers/netventory/releases/download/#{version}/netventory.mac.zip"
   name "Netventory"
